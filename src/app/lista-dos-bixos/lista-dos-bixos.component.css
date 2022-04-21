@@ -1,0 +1,4 @@
+.grade {
+    display: flex;
+    flex-wrap: wrap;
+}
