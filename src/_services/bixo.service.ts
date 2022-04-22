@@ -14,7 +14,7 @@ export class BixoService {
   constructor(
     private httpClient: HttpClient,
   ) {
-    const allBixosUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=151';
+    const allBixosUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=251';
 
     this.httpClient.get<any>(allBixosUrl).pipe(
       map(value => value.results),
