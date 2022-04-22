@@ -14,23 +14,24 @@
     border: 2px solid rgb(85, 43, 9);
     border-radius: 3000px;
     margin: 30px;
+    margin-bottom: 20px;
 }
 
 .infoDoBixo{
     background-color: rgb(172, 132, 90);
     border: 2px solid rgb(194, 161, 125);
-    
+    font-family: 'Signika', sans-serif, black;
     margin: 5px;
     padding: 10px;
 }
 
 .numeroDoBixo{
-    font-family: Consolas black;
     font-size: small;
     margin-bottom: 15px;
 }
 
 .nomeDoBixo{
+    /*font-weight: 700;*/
     font-size: larger;
     margin-bottom: 15px;
     text-align: center;
@@ -43,10 +44,10 @@
 }
 
 .tipoDoBixo{
-    border: 1px solid white;
+    border: 1px solid rgb(194, 161, 125);
     border-radius: 5px;
     display: grid;
-    font-family: Consolas black;
+    font-family: Consolas;
     font-size: small;
     margin-left: 5px;
     text-transform: uppercase;
@@ -62,48 +63,75 @@
 
 /* *************************************************************************** */
 /*  TIPOS ELEMENTAIS DOS BIXOS  */
-#Bug{
-    background-color: #f8d5a3;
+#bug{
+    background-color: #729f3f;
+    color: #fff;
 }
-#Dragon{
-    background-color: #97b3e6;
+#dark{
+    background-color: #707070;
+    color: #fff;
 }
-#Electric{
-    background-color: #FCF7DE;
+#dragon{
+    background-color: #53a4cf;
+    color: #fff;
 }
-#Fairy{
-    background-color: #fceaff;
+#electric{
+    background-color: #eed535;
+    color: #212121;
 }
-#Fighting{
-    background-color: #E6E0D4;
+#fairy{
+    background-color: #fdb9e9;
+    color: #212121;
 }
-#Fire{
-    background-color: #FDDFDF;
+#fighting{
+    background-color: #d56723;
+    color: #fff;
 }
-#Flying{
-    background-color: #F5F5F5;
+#fire{
+    background-color: #fd7d24;
+    color: #fff;
 }
-#Ghost, #Steel {
-    background-color: #f4f4f4;
+#flying{
+    background-color: #3dc7ef;
+    color: #212121;
 }
-#Grass{
-    background-color: #DEFDE0;
+#ghost{
+    background-color: #7b62a3;
+    color: #fff;
 }
-#Ground{
-    background-color: #f4e7da;
+#grass{
+    background-color: #9bcc50;
+    color: #212121;
 }
-#Ice, #Water{
-    background-color: #DEF3FD;
+#ground{
+    background-color: #f7de3f;
+    color: #212121;
 }
-#Normal{
-    background-color: #F5F5F5;
+#ice{
+    background-color: #51c4e7;
+    color: #212121;
 }
-#Poison{
-    background-color: #98d7a5;
+#normal{
+    background-color: #a4acaf;
+    color: #212121;
 }
-#Psychic{
-    background-color: #eaeda1;
+#poison{
+    background-color: #b97fc9;
+    color: #fff;
 }
-#Rock{
-    background-color: #d5d5d4;
+#psychic{
+    background-color: #f366b9;
+    color: #fff;
+}
+#rock{
+    background-color: #a38c21;
+    color: #fff;
+}
+#steel{
+    background-color: #9eb7b8;
+    color: #212121;
+}
+#Water{
+    background-color: #4592c4;
+    color: #fff;
 }
