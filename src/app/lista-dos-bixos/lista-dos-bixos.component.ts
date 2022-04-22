@@ -1,3 +1,4 @@
+import { BixoService } from './../../_services/bixo.service';
 import { Bixo } from './../../_model/bixo';
 import { Tipo } from './../../_model/tipo';
 import { Component } from '@angular/core';
@@ -8,41 +9,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./lista-dos-bixos.component.css']
 })
 export class ListaDosBixosComponent {
-    public bixos: Bixo[] = [
-      {
-        foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png',
-        numero: 1,
-        nome: 'Bulbasaur',
-        tipos: [
-          Tipo.grass,
-          Tipo.poison,
-        ],
-      },
-      {
-        foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png',
-        numero: 2,
-        nome: 'Ivysaur',
-        tipos: [
-          Tipo.grass,
-          Tipo.poison,
-        ],
-      },
-      {
-        foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png',
-        numero: 3,
-        nome: 'Venosaur',
-        tipos: [
-          Tipo.grass,
-          Tipo.poison,
-        ],
-      },
-      {
-        foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png',
-        numero: 4,
-        nome: 'Charmander',
-        tipos: [
-          Tipo.fire,
-        ],
-      },
-    ];
+    constructor(
+      public bixoService: BixoService,
+    ) {
+    }
   }
