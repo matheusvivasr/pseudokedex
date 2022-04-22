@@ -1,10 +1,15 @@
 <div class="carta">
     <div class="fichaProBixo">
         <div class="imagemDoBixo">
-            <img [src]="bixo.foto" alt="Pokemon Image">
+            <img [src]="fotoDoBixo(bixo)" alt="Pokemon Image">
         </div>
         <div class="infoDoBixo">
-            <div class="numeroDoBixo">Nº {{ numeroDoBixo(bixo) }}</div>
+            <div class="pequenasInfos">
+                <div class="numeroDoBixo">Nº {{ numeroDoBixo(bixo) }}</div>
+                <button class="favoritar">
+                    <img class="icone" src="./../../assets/like.png" alt="like">
+                </button>
+            </div>
             <div class="nomeDoBixo">{{ bixo.nome }}</div>
             <div class="tiposDoBixo">
                 <div class="tipoDoBixo" *ngFor="let tipo of bixo.tipos" [id]="tipo.toLowerCase()">{{ tipo }}</div> 

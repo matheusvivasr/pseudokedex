@@ -1,41 +1,66 @@
 .carta{
-    background-color: rgb(85, 43, 9);
+    background-color: #212121;
     padding: 7px;
     margin-bottom: 15px;
     width: 300px;
 }
 .fichaProBixo{
-    background-color: rgb(146, 103, 54);
+    background-image: url('./../../assets/dark-metal-bg.jpg');
     border-radius: 10px;
+    font-family: 'Signika', sans-serif, black;
     padding: 5px;    
 }
 
 .imagemDoBixo{
-    background-color:rgb(117, 93, 65);
-    border: 2px solid rgb(85, 43, 9);
+    background-image: url('./../../assets/metal-bg.jpg');
+    border: 2px solid #212121;
     border-radius: 3000px;
     margin: 30px;
     margin-bottom: 20px;
 }
 
+.pequenasInfos{
+    display: flex;
+    font-size: small;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
 .infoDoBixo{
-    background-color: rgb(172, 132, 90);
-    border: 2px solid rgb(194, 161, 125);
-    font-family: 'Signika', sans-serif, black;
+    background-image: url('./../../assets/metal-bg.jpg');
+    border: 2px solid #212121;
     margin: 5px;
     padding: 10px;
+
+
 }
 
 .numeroDoBixo{
-    font-size: small;
-    margin-bottom: 15px;
+    background-color: #212121;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px;
+    
+}
+
+.favoritar{
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 1000px;    
+    
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
 }
 
 .nomeDoBixo{
-    /*font-weight: 700;*/
-    font-size: larger;
-    margin-bottom: 15px;
+    font-size: x-large;
+    font-weight: 700;
+    margin-bottom: 10px;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .tiposDoBixo{
@@ -46,7 +71,7 @@
 }
 
 .tipoDoBixo{
-    border: 1px solid rgb(194, 161, 125);
+    border: 1px solid gray;
     border-radius: 5px;
     display: grid;
     font-family: Consolas;
@@ -56,8 +81,15 @@
     padding: 4px;
 }
 
+.favoritar:hover {
+    background-color: yellow;
+    border: 1px solid transparent;
+}
 
-
+.icone{
+    width: 10px;
+    height: 10px;
+}
 
 
 

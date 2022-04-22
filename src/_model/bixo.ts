@@ -7,7 +7,7 @@ export interface Bixo {
 }
 
 export function fotoDoBixo(bixo: Bixo): string {
-    return `https://assets.bixo.com/assets/cms2/img/pokedex/detail/${numeroDoBixo(bixo)}.png`;
+    return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${numeroDoBixo(bixo)}.png`;
 }
 
 export function numeroDoBixo(bixo: Bixo): string {
