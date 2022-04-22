@@ -1,22 +1,13 @@
 <div class="carta">
     <div class="fichaProBixo">
         <div class="imagemDoBixo">
-            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="">
+            <img [src]="bixo.foto" alt="Pokemon Image">
         </div>
         <div class="infoDoBixo">
-            <div class="numeroDoBixo">
-                N° 001
-            </div>
-            <div class="nomeDoBixo">
-                Bulbasaur
-            </div>
+            <div class="numeroDoBixo">Nº {{ leadingZero(bixo.numero) }}</div>
+            <div class="nomeDoBixo">{{ bixo.nome }}</div>
             <div class="tiposDoBixo">
-                <div class="tipoDoBixo" id="grass">
-                    Grass
-                </div>
-                <div class="tipoDoBixo" id="poison">
-                    poison
-                </div>
+                <div class="tipoDoBixo" *ngFor="let tipo of bixo.tipos" [id]="tipo.toLowerCase()">{{ tipo }}</div> 
             </div>
         </div>
     </div>

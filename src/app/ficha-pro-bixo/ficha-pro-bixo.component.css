@@ -2,6 +2,7 @@
     background-color: rgb(85, 43, 9);
     padding: 7px;
     margin-bottom: 15px;
+    width: 300px;
 }
 .fichaProBixo{
     background-color: rgb(146, 103, 54);
@@ -41,6 +42,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
+    padding-top: 10px;
 }
 
 .tipoDoBixo{
@@ -131,7 +133,7 @@
     background-color: #9eb7b8;
     color: #212121;
 }
-#Water{
+#water{
     background-color: #4592c4;
     color: #fff;
 }
