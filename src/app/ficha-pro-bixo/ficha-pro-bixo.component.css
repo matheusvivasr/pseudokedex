@@ -1,0 +1,109 @@
+.carta{
+    background-color: rgb(85, 43, 9);
+    padding: 7px;
+    margin-bottom: 15px;
+}
+.fichaProBixo{
+    background-color: rgb(146, 103, 54);
+    border-radius: 10px;
+    padding: 5px;    
+}
+
+.imagemDoBixo{
+    background-color:rgb(117, 93, 65);
+    border: 2px solid rgb(85, 43, 9);
+    border-radius: 3000px;
+    margin: 30px;
+}
+
+.infoDoBixo{
+    background-color: rgb(172, 132, 90);
+    border: 2px solid rgb(194, 161, 125);
+    
+    margin: 5px;
+    padding: 10px;
+}
+
+.numeroDoBixo{
+    font-family: Consolas black;
+    font-size: small;
+    margin-bottom: 15px;
+}
+
+.nomeDoBixo{
+    font-size: larger;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.tiposDoBixo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.tipoDoBixo{
+    border: 1px solid white;
+    border-radius: 5px;
+    display: grid;
+    font-family: Consolas black;
+    font-size: small;
+    margin-left: 5px;
+    text-transform: uppercase;
+    padding: 4px;
+}
+
+
+
+
+
+
+
+
+/* *************************************************************************** */
+/*  TIPOS ELEMENTAIS DOS BIXOS  */
+#Bug{
+    background-color: #f8d5a3;
+}
+#Dragon{
+    background-color: #97b3e6;
+}
+#Electric{
+    background-color: #FCF7DE;
+}
+#Fairy{
+    background-color: #fceaff;
+}
+#Fighting{
+    background-color: #E6E0D4;
+}
+#Fire{
+    background-color: #FDDFDF;
+}
+#Flying{
+    background-color: #F5F5F5;
+}
+#Ghost, #Steel {
+    background-color: #f4f4f4;
+}
+#Grass{
+    background-color: #DEFDE0;
+}
+#Ground{
+    background-color: #f4e7da;
+}
+#Ice, #Water{
+    background-color: #DEF3FD;
+}
+#Normal{
+    background-color: #F5F5F5;
+}
+#Poison{
+    background-color: #98d7a5;
+}
+#Psychic{
+    background-color: #eaeda1;
+}
+#Rock{
+    background-color: #d5d5d4;
+}
