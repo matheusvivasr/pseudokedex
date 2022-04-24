@@ -1,0 +1,20 @@
+<div class="carta">
+    <div class="fichaProBixo" id="verso">
+        <div class="infoDoBixo" id="caixa">
+            <div class="tituloV">{{ bixo.nome }}</div>
+        </div>
+        <div class="imagemDoBixoV">
+            <app-miniatura-do-bixo [miniatura]="bixo.foto"></app-miniatura-do-bixo>
+            <app-miniatura-do-bixo [miniatura]="bixo.fotoB"></app-miniatura-do-bixo>
+        </div>
+        <div class="infoDoBixo" id="caixa">
+            <div class="pequenasInfos">
+                <div class="numeroDoBixo">Nº {{ numeroDoBixo(bixo) }}</div>
+                <div class="subtituloV">base status</div>
+                <button class="favoritar"><img class="icone" src="./../../assets/pokebola.png" alt="like"></button>  
+            </div>
+            <app-caixa-de-status [bixo]="bixo"></app-caixa-de-status>
+            <app-tipos-do-bixo [bixo]="bixo"></app-tipos-do-bixo>
+        </div>
+    </div>
+</div>

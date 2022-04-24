@@ -1,0 +1,60 @@
+#caixa{
+    background-image: url('./../../assets/metal-bg.jpg');
+    border: 2px solid #212121;
+}
+
+.carta{
+    background-color: #212121;
+    padding: 7px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 422px;
+}
+
+.fichaProBixo{
+    background-image: url('./../../assets/dark-metal-bg.jpg');
+    border-radius: 3%;
+    font-family: 'Signika', sans-serif, black;
+    height: 98%;
+    padding: 1.3%;
+    
+}
+
+.imagemDoBixo{
+    border-radius: 7%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10%;
+    margin-bottom: 7%;
+    width: auto;
+}
+
+.infoDoBixo{
+    margin: 2%;
+    padding: 4%;
+    
+}
+
+.pequenasInfos{
+    display: flex;
+    font-size: small;
+    justify-content: space-between;
+    padding-right: 3%;
+    margin-bottom: 3%;
+}
+
+.numeroDoBixo{
+    background-color: #212121;
+    border-radius: 7px;
+    color: #fff;
+    padding: 2%;
+    
+}
+
+.nomeDoBixo{
+    font-size: x-large;
+    font-weight: 700;
+    margin-bottom: 9%;
+    text-align: center;
+    text-transform: capitalize;
+}

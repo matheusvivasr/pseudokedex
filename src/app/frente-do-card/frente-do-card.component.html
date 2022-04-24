@@ -1,0 +1,15 @@
+<div class="carta">
+    <div class="fichaProBixo">
+        <div class="imagemDoBixo" id="caixa">
+            <img [src]="fotoDoBixo(bixo)" alt="Pokemon Image">
+        </div>
+        <div class="infoDoBixo" id="caixa">
+            <div class="pequenasInfos">
+                <div class="numeroDoBixo">Nº {{ numeroDoBixo(bixo) }}</div>
+            </div>
+            <div class="nomeDoBixo">{{ bixo.nome }}</div>
+            <app-tipos-do-bixo [bixo]="bixo"></app-tipos-do-bixo>
+        </div> 
+    </div>
+</div>
+

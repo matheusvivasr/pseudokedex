@@ -1,0 +1,107 @@
+.tiposDoBixo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.tipoDoBixo{
+    
+    border-radius: 7px;
+    font-family: Consolas;
+    font-size: small;
+    margin-left: 2%;
+    padding: 2%;
+    text-transform: uppercase;
+}
+
+/*  TIPOS ELEMENTAIS DOS BIXOS  */
+#bug{
+    background-color: #729f3f;
+    color: #fff;
+    border: 1px solid lightgray;
+}
+#dark{
+    background-color: #707070;
+    color: #fff;
+    border: 1px solid lightgray;
+}
+#dragon{
+    background-color: #53a4cf;
+    color: #fff;
+    border: 1px solid lightgray;
+}
+#electric{
+    background-color: #eed535;
+    color: #212121;
+    border: 1px solid gray;
+}
+#fairy{
+    background-color: #fdb9e9;
+    color: #212121;
+    border: 1px solid gray;
+}
+#fighting{
+    background-color: #d56723;
+    color: #fff;
+    border: 1px solid lightgray;
+}
+#fire{
+    background-color: #fd7d24;
+    color: #fff;
+    border: 1px solid lightgray;
+}
+#flying{
+    background-color: #3dc7ef;
+    color: #212121;
+    border: 1px solid gray;
+}
+#ghost{
+    background-color: #7b62a3;
+    color: #fff;
+    border: 1px solid lightgray;
+}
+#grass{
+    background-color: #9bcc50;
+    color: #212121;
+    border: 1px solid gray;
+}
+#ground{
+    background-color: #f7de3f;
+    color: #212121;
+    border: 1px solid gray;
+}
+#ice{
+    background-color: #51c4e7;
+    color: #212121;
+    border: 1px solid gray;
+}
+#normal{
+    background-color: #a4acaf;
+    color: #212121;
+    border: 1px solid gray;
+}
+#poison{
+    background-color: #b97fc9;
+    color: #fff;
+    border: 1px solid lightgray;
+}
+#psychic{
+    background-color: #f366b9;
+    color: #fff;
+    border: 1px solid lightgray;
+}
+#rock{
+    background-color: #a38c21;
+    color: #fff;
+    border: 1px solid lightgray;
+}
+#steel{
+    background-color: #9eb7b8;
+    color: #212121;
+    border: 1px solid gray;
+}
+#water{
+    background-color: #4592c4;
+    color: #fff;
+    border: 1px solid lightgray;
+}

@@ -1,0 +1,29 @@
+#statusGeral{
+    height: 20px;
+    padding: 4px; 
+}
+
+.statusDoBixoT{
+    text-align: start;
+}
+
+.statusDoBixoN{
+    text-align: center;
+}
+
+.caixinha{
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 7px;
+    color:black;
+    ;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: stretch;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    margin:7px;
+}

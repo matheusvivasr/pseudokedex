@@ -1,65 +1,6 @@
 <div class="viradaContainer">
     <div class="virada">
-        <div class="frente">
-            <div class="carta">
-                <div class="fichaProBixo">
-                    <div class="imagemDoBixo">
-                        <img [src]="fotoDoBixo(bixo)" alt="Pokemon Image">
-                    </div>
-                    <div class="infoDoBixo">
-                        <div class="pequenasInfos">
-                            <div class="numeroDoBixo">Nº {{ numeroDoBixo(bixo) }}</div>
-                        </div>
-                        <div class="nomeDoBixo">{{ bixo.nome }}</div>
-                        <div class="tiposDoBixo">
-                            <div class="tipoDoBixo" *ngFor="let tipo of bixo.tipos" [id]="tipo.toLowerCase()">{{ tipo }}</div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="verso">
-            <div class="carta">
-                <div class="fichaProBixo" id="verso">
-                    <div class="infoDoBixo">
-                        <div class="tituloV">{{ bixo.nome }}</div>
-                    </div>
-                    <div class="imagemDoBixoV">
-                        <div class="miniImgBixo">
-                            <div class="portaBixo">
-                                <img [src]="bixo.foto" alt="Pokemon Image">
-                            </div>
-                        </div>
-                        <div class="miniImgBixo">
-                            <div class="portaBixo">
-                                <img [src]="bixo.fotoB" alt="Pokemon Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="infoDoBixo">
-                        <div class="pequenasInfos">
-                            <div class="numeroDoBixo">Nº {{ numeroDoBixo(bixo) }}</div>
-                            <div class="nomeDoBixoV">base status</div>
-                            <button class="favoritar"><img class="icone" src="./../../assets/like.png" alt="like"></button>  
-                        </div>
-                        <div class="gradeDeStatus">
-                            <div class="statusDoBixoT" id="statusGeral">HP:</div>
-                            <div class="statusDoBixoN" id="statusGeral">{{ bixo.vida }}</div>
-                            
-                            <div class="statusDoBixoT" id="statusGeral">Speed:</div>
-                            <div class="statusDoBixoN" id="statusGeral">{{ bixo.rapidez }}</div>
-                            
-                            <div class="statusDoBixoT" id="statusGeral">Attack:</div>
-                            <div class="statusDoBixoN" id="statusGeral">{{ bixo.ataque }}</div>
-                            
-                            <div class="statusDoBixoT" id="statusGeral">Defense:</div>
-                            <div class="statusDoBixoN" id="statusGeral">{{ bixo.defesa }}</div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-        </div>
-
+        <div class="frente"><app-frente-do-card [bixo]="bixo"></app-frente-do-card></div>
+        <div class="verso"><app-verso-do-card [bixo]="bixo"></app-verso-do-card></div>
     </div>
 </div>

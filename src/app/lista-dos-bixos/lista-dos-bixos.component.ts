@@ -13,8 +13,8 @@ export class ListaDosBixosComponent {
 
   public bixosTeste: Bixo[] = [
     {
-      foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png',
-      fotoB: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png',
+      foto: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png',
+      fotoB: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png',
       numero: 3,
       nome: 'Venosaur',
       tipos: [
@@ -27,8 +27,8 @@ export class ListaDosBixosComponent {
       rapidez:100,
     },
     {
-      foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png',
-      fotoB: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png',
+      foto: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png',
+      fotoB: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png',
       numero: 6,
       nome: 'Charizard',
       tipos: [
@@ -41,8 +41,8 @@ export class ListaDosBixosComponent {
       rapidez:100,
     },
     {
-      foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/062.png',
-      fotoB: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/062.png',
+      foto: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png',
+      fotoB: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/62.png',
       numero: 62,
       nome: 'Poliwrath',
       tipos: [
@@ -55,8 +55,8 @@ export class ListaDosBixosComponent {
       rapidez:100,
     },  
     {
-      foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/132.png',
-      fotoB: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/132.png',
+      foto: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png',
+      fotoB: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png',
       numero: 132,
       nome: 'Tipos',
       tipos: [
@@ -71,8 +71,8 @@ export class ListaDosBixosComponent {
       rapidez:100,
     },
     {
-      foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/082.png',
-      fotoB: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/082.png',
+      foto: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png',
+      fotoB: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/82.png',
       numero: 82,
       nome: 'magneton',
       tipos: [
@@ -85,8 +85,8 @@ export class ListaDosBixosComponent {
       rapidez:100,
     },
     {
-      foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/047.png',
-      fotoB: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/047.png',
+      foto: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png',
+      fotoB: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/47.png',
       numero: 47,
       nome: 'parasect',
       tipos: [
@@ -99,8 +99,8 @@ export class ListaDosBixosComponent {
       rapidez:100,
     },
     {
-      foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/111.png',
-      fotoB: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/111.png',
+      foto: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png',
+      fotoB: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/111.png',
       numero: 111,
       nome: 'rhyhorn',
       tipos: [
@@ -113,8 +113,8 @@ export class ListaDosBixosComponent {
       rapidez:100,
     },
     {
-      foto: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/122.png',
-      fotoB: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/122.png',
+      foto: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png',
+      fotoB: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/122.png',
       numero: 122,
       nome: 'mr-mime',
       tipos: [

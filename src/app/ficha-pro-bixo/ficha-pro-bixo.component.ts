@@ -14,4 +14,3 @@ export class FichaProBixoComponent {
   public fotoDoBixo = fotoDoBixo;
   public numeroDoBixo = numeroDoBixo;
 }
-

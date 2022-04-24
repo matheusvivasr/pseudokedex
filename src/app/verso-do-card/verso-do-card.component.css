@@ -1,0 +1,96 @@
+
+#verso{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+
+#caixa{
+    background-image: url('./../../assets/metal-bg.jpg');
+    border: 2px solid #212121;
+}
+
+.carta{
+    background-color: #212121;
+    padding: 7px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 422px;
+}
+
+.fichaProBixo{
+    background-image: url('./../../assets/dark-metal-bg.jpg');
+    border-radius: 3%;
+    font-family: 'Signika', sans-serif, black;
+    height: 98%;
+    padding: 1.3%;
+}
+
+.tituloV{
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.imagemDoBixoV{
+    display: flex;
+    justify-content: space-evenly;
+
+    width: auto;
+}
+
+.infoDoBixo{
+    margin: 2%;
+    margin-top: 6%;
+    padding: 4%;
+    height: max-content;
+}
+
+.pequenasInfos{
+    display: flex;
+    font-size: small;
+    justify-content: space-between;
+    padding-right: 3%;
+    margin-bottom: 3%;
+    margin-bottom: 15px ;
+}
+
+.numeroDoBixo{
+    background-color: #212121;
+    border-radius: 7px;
+    color: #fff;
+    padding: 2%;
+    
+}
+
+.icone{
+    width: 30px;
+    height: auto;
+}
+
+.subtituloV{
+    font-weight: 700;
+    font-size: large;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 4px;
+}
+
+.favoritar{
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 100px;    
+    
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+}
+
+.favoritar:hover {
+    background-color: yellow;
+    border: 1px solid transparent;
+}
