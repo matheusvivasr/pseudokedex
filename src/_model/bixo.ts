@@ -1,9 +1,16 @@
 import { Tipo } from './tipo'
 export interface Bixo {
     foto:string;
+    fotoB:string;
     numero: number;
     nome: string;
-    tipos: Tipo[]; 
+    tipos: Tipo[];
+    
+    vida: number;
+    ataque: number;
+    defesa: number;
+    rapidez: number;
+
 }
 
 export function fotoDoBixo(bixo: Bixo): string {

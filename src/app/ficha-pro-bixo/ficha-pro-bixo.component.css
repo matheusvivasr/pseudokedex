@@ -3,27 +3,56 @@
     padding: 7px;
     margin-bottom: 15px;
     width: 300px;
+    height: 422px;
 }
+
 .fichaProBixo{
     background-image: url('./../../assets/dark-metal-bg.jpg');
     border-radius: 10px;
     font-family: 'Signika', sans-serif, black;
-    padding: 5px;    
+    height: 97.5%;
+    padding: 5px;
+    
 }
 
 .imagemDoBixo{
     background-image: url('./../../assets/metal-bg.jpg');
     border: 2px solid #212121;
-    border-radius: 4200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
     margin: 30px;
     margin-bottom: 20px;
+    width: auto;
+}
+
+
+.miniImgBixo{
+    background-image: url('./../../assets/metal-bg.jpg');
+    border: 2px solid #212121;
+    width: 100px;
+    height: 100px;
+    border-radius: 20000px;
+    
+}
+
+.portaBixo{
+    background-image: url('./../../assets/pokebola.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 135px;
+    border-radius: 20000px;
+    height: 100px;
+    width: 100px;
+    
 }
 
 .pequenasInfos{
     display: flex;
     font-size: small;
     justify-content: space-between;
-    margin-bottom: 15px;
+    padding-right: 10px;
+    margin-bottom: 10px;
 }
 
 .infoDoBixo{
@@ -31,8 +60,7 @@
     border: 2px solid #212121;
     margin: 5px;
     padding: 10px;
-
-
+    
 }
 
 .numeroDoBixo{
@@ -41,18 +69,6 @@
     color: #fff;
     padding: 4px;
     
-}
-
-.favoritar{
-    background: transparent;
-    border: 1px solid gray;
-    border-radius: 1000px;    
-    
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 0.4s;
 }
 
 .nomeDoBixo{
@@ -71,19 +87,13 @@
 }
 
 .tipoDoBixo{
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     border-radius: 5px;
-    display: grid;
     font-family: Consolas;
     font-size: small;
     margin-left: 5px;
-    text-transform: uppercase;
     padding: 4px;
-}
-
-.favoritar:hover {
-    background-color: yellow;
-    border: 1px solid transparent;
+    text-transform: uppercase;
 }
 
 .icone{
@@ -91,8 +101,112 @@
     height: 10px;
 }
 
+.favoritar:hover {
+    background-color: yellow;
+    border: 1px solid transparent;
+}
 
+.favoritar{
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 1000px;    
+    
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+}
 
+.frente, .verso{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.verso{
+    transform: rotateY(180deg);
+    background-image: url('./../../assets/dark-metal-bg.jpg');
+}
+
+.viradaContainer:hover .virada{
+    transform: rotateY(180deg);
+}
+
+.viradaContainer{
+    width: 300px;
+    height: 430px;
+    margin-bottom: 25px;
+}
+
+.virada{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.tituloV{
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.nomeDoBixoV{
+    font-weight: 700;
+    font-size: medium;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.imagemDoBixoV{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    margin-bottom: 20px;
+    width: auto;
+}
+.gradeDeStatus{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    align-content: space-around;
+    height: 100px;
+}
+
+#statusGeral{
+    background-color: lightgray;
+    color: black;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    height: 20px;
+    padding: 4px; 
+}
+
+.statusDoBixoT{
+    text-align: start;
+    border-left: 2px solid gray;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.statusDoBixoN{
+    border-right: 2px solid gray;
+    text-align: center;
+    margin-right: 5px;
+}
+
+#verso{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+
+/* *************************************************************************** */
 
 
 /* *************************************************************************** */

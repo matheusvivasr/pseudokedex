@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Bixo } from '../_model/bixo';
 import { from, finalize} from 'rxjs';
-import { map, mergeMap } from 'rxjs/operators';
+import { map, mergeMap, skip } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -29,9 +29,14 @@ export class BixoService {
     ).subscribe((result: any) => {
         this.bixos.push( {
         foto: result.sprites.front_default,
+        fotoB: result.sprites.back_default,
         numero: result.id,
         nome: result.name,
         tipos: result.types.map((t:any) => t.type.name),
+        vida: result.stats[0].base_stat,
+        ataque: result.stats[1].base_stat,
+        defesa: result.stats[2].base_stat,
+        rapidez: result.stats[5].base_stat,
       })
       console.log(this.bixos)
     },
