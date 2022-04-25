@@ -12,11 +12,9 @@
 }
 
 .caixinha{
-    background-color: lightgray;
     border: 1px solid gray;
     border-radius: 7px;
     color:black;
-    ;
 
     display: flex;
     flex-direction: row;
@@ -26,4 +24,15 @@
     padding-right: 5px;
 
     margin:7px;
+    transition-duration: 0.3s;
+}
+
+.caixinha:hover{
+    border: 1px solid transparent;
+    font-family: 'Signika', sans-serif;
+    color: whitesmoke;
+    background-color: gray;
+    padding: 2px;
+    margin: 5px;
+
 }
