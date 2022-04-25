@@ -1,0 +1,47 @@
+/*
+
+
+*/
+
+.barra{
+    font-family: 'Signika', sans-serif, black;
+    top: 0;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgba(135, 123, 238, 0.95);
+}
+
+.titulo{
+    margin: 10px;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.opcoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.opcao{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.active {
+    color: antiquewhite;
+    cursor: unset;
+}
+
+.opcao:hover{
+    color: antiquewhite;
+}
