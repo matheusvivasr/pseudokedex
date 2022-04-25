@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PseudokedexComponent } from './pseudokedex/pseudokedex.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'', component:PseudokedexComponent},
+  {path:'buscar/:buscaBixo',component:PseudokedexComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

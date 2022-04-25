@@ -1,0 +1,4 @@
+<div class="buscaBarra">
+    <input type="search" [(ngModel)]="bixoBuscado" placeholder="Qual você quer?">
+  </div>
+  <div *ngFor="let bixoProcurado of bixoService.bixos | filtroBuscador: bixoBuscado"></div>
