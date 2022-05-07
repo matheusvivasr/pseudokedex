@@ -1,5 +1,4 @@
-import { Component, Input} from '@angular/core';
-import { Bixo } from 'src/_model/bixo';
+import { Component } from '@angular/core';
 import { BixoService } from 'src/_services/bixo.service';
 
 @Component({
@@ -7,14 +6,13 @@ import { BixoService } from 'src/_services/bixo.service';
   templateUrl: './buscador.component.html',
   styleUrls: ['./buscador.component.css']
 })
-export class BuscadorComponent {
-  @Input()
-  public bixo: Bixo[] = [];
+export class BuscadorComponent {  
+  
+  constructor(private bixoService: BixoService){}
 
-  public bixoBuscado:string;
-
-  constructor(
-    public bixoService: BixoService
-    ) {}
-
+  buscaService(bixoBuscado:string){
+    this.bixoService.buscaBixos(bixoBuscado);
+    
+  }
+  
 }

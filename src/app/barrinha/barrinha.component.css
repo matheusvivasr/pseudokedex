@@ -38,10 +38,9 @@
 }
 
 .active {
-    color: antiquewhite;
-    cursor: unset;
+    color: white;
 }
 
 .opcao:hover{
-    color: antiquewhite;
+    color: lightblue;
 }

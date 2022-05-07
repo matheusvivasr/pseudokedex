@@ -24,7 +24,7 @@
     padding-right: 5px;
 
     margin:7px;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
 
 .caixinha:hover{
@@ -32,7 +32,4 @@
     font-family: 'Signika', sans-serif;
     color: whitesmoke;
     background-color: gray;
-    padding: 2px;
-    margin: 5px;
-
 }

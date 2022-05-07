@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Bixo, fotoDoBixo, numeroDoBixo } from './../../_model/bixo';
+import { Bixo, fotoDoBixo, numeroDoBixo } from '../../../_model/bixo';
 
 @Component({
   selector: 'app-ficha-pro-bixo',
@@ -13,4 +13,7 @@ export class FichaProBixoComponent {
 
   public fotoDoBixo = fotoDoBixo;
   public numeroDoBixo = numeroDoBixo;
+
+  
+
 }

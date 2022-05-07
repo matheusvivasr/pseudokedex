@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Bixo } from './../../_model/bixo';
+import { Bixo } from 'src/_model/bixo';
 
 @Component({
   selector: 'app-caixa-de-status',

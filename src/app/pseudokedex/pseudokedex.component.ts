@@ -1,26 +1,31 @@
-import { FiltroBuscadorPipe } from './../../_filters/filtro-buscador.pipe';
-import { BixoService } from './../../_services/bixo.service';
-import { Bixo } from './../../_model/bixo'
-import { Component, OnInit } from '@angular/core';
+import { Observable, of, Subscription, tap } from 'rxjs';
+import { Bixo } from './../../_model/bixo';
 import { ActivatedRoute } from '@angular/router';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { BixoService } from 'src/_services/bixo.service';
+
 
 @Component({
   selector: 'app-pseudokedex',
   templateUrl: './pseudokedex.component.html',
   styleUrls: ['./pseudokedex.component.css']
 })
-export class PseudokedexComponent implements OnInit{
+export class PseudokedexComponent implements OnDestroy{
+  listaFinal: Bixo[] = [];
 
-  bixos:Bixo[] =[]
-  constructor(public bixoService: BixoService, private rotas:ActivatedRoute ) {}
-
-  ngOnInit(): void {
-    this.rotas.params.subscribe(params =>{
-      if(params['buscaBixo'])
-        this.bixos = this.bixoService.bixos.filter(bixo => bixo.nome.toLocaleLowerCase().includes(params['buscaBixo'].toLocaleLowerCase()))
-      else
-        this.bixos = this.bixoService.bixos
-    })
+  $buscaListener: Subscription;
+  
+  constructor(public bixoService: BixoService, private caminho:ActivatedRoute){
+    this.listaFinal = this.bixoService.getBixos();
+    this.$buscaListener = this.bixoService.$novaBusca
+      .pipe(
+        tap((resultado: Bixo[]) => {
+          this.listaFinal = resultado;
+        })
+      )
+      .subscribe();
   }
-
+  ngOnDestroy(): void {
+    this.$buscaListener.unsubscribe();
+  }
 }

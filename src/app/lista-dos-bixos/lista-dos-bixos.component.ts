@@ -1,7 +1,7 @@
 import { BixoService } from './../../_services/bixo.service';
 import { Bixo } from './../../_model/bixo';
 import { Tipo } from './../../_model/tipo';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-lista-dos-bixos',
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./lista-dos-bixos.component.css']
 })
 export class ListaDosBixosComponent {
-  constructor(public bixoService: BixoService) {}
+  constructor(public listaCompleta: BixoService) {}
 
   public bixosTeste: Bixo[] = [
     {

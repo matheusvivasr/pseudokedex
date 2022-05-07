@@ -1,3 +1,8 @@
 .margem{
     margin-top: 80px;
 }
+.grade {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

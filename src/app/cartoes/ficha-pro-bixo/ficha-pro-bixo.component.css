@@ -11,6 +11,7 @@
 }
 
 .viradaContainer:hover .virada{
+    transition-delay: 0.15s;
     transform: rotateY(180deg);
 }
 

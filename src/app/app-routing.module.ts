@@ -4,7 +4,7 @@ import { PseudokedexComponent } from './pseudokedex/pseudokedex.component';
 
 const routes: Routes = [
   {path:'', component:PseudokedexComponent},
-  {path:'buscar/:buscaBixo',component:PseudokedexComponent }
+
 ];
 
 @NgModule({

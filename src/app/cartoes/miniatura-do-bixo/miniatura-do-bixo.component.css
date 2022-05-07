@@ -20,13 +20,9 @@
 }
 
 img{
-    transition-duration: 0.1s;
+    transition-duration: 0.15s;
 }
 
 img:hover{
-
-    height: 150px;
-    width: 150px;
-    object-position: -25px -25px;
-    
+    transform: scale(1.5);
 }
