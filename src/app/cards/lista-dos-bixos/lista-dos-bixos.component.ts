@@ -1,6 +1,6 @@
-import { BixoService } from './../../_services/bixo.service';
-import { Bixo } from './../../_model/bixo';
-import { Tipo } from './../../_model/tipo';
+import { BixoService } from '../../../_services/bixo.service';
+import { Bixo } from '../../../_model/bixo';
+import { Tipo } from '../../../_model/tipo';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -9,8 +9,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./lista-dos-bixos.component.css']
 })
 export class ListaDosBixosComponent {
+  
   constructor(public listaCompleta: BixoService) {}
-
+  
   public bixosTeste: Bixo[] = [
     {
       foto: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png',
@@ -127,6 +128,5 @@ export class ListaDosBixosComponent {
       rapidez:100,
     },
     
-  ];
-    
-  }
+  ];  
+}
